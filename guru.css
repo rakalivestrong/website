@@ -1,0 +1,145 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #10101A;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0D0D15;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    width: 40;
+    height: 100%;
+}
+
+.logo h1 {
+    color: #00ffcc;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #00ffcc;
+}
+
+
+/* Teachers Section */
+.teachers-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.teachers-section h2 {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.teachers-section .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.teacher-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.teacher-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-card img {
+    width: 150px; /* Gambar lebih besar */
+    height: 150px; /* Gambar lebih besar */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 5px solid #00bfa3; /* Garis tepi lebih tebal */
+}
+
+.teacher-info h3 {
+    font-size: 1.7rem; /* Ukuran teks nama lebih besar */
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.teacher-info p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.teacher-info .email {
+    font-size: 1rem;
+    color: #00bfa3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.teacher-info .email:hover {
+    color: #007965;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .teachers-section h2 {
+        font-size: 2rem;
+    }
+
+    .teacher-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .teacher-info p {
+        font-size: 1rem;
+    }
+}
